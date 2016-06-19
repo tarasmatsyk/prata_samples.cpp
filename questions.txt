@@ -20,3 +20,5 @@ a: wchar_t is UTF16LE which is used by win32API and was invented before utf8
 
 5. Floating. Only three? float, double, long double?
 Where is decimal? Double has relatvie accuracy, so how to work with money?
+
+6. How to set compile options in the file? Like Makefile for C
