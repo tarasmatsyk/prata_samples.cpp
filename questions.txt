@@ -1,0 +1,22 @@
+1. WTF is that?? what's the point?
+
+int fuckit(3);
+int emus{7};
+int rheas = {12};
+
+int rocs = {};
+int psychics{};
+
+2. Does c++ throw an exception in case of variable overflow? (it does not)
+uint wtf = UINT_MAX + 1; 
+2.1 Does max value depend on pc architecture? 
+
+3. Character types. Char, wchar_t. When to use which? Always wchar_t?
+UTF-8, UTF-16, UTF-16LE, UTF-16BE? Windows? wtf?
+char_t16 vs char_t32? 
+a: wchar_t is UTF16LE which is used by win32API and was invented before utf8
+
+4. Define used to replace variable during preprocessing. Const? Is it the same?
+
+5. Floating. Only three? float, double, long double?
+Where is decimal? Double has relatvie accuracy, so how to work with money?
