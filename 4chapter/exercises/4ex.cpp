@@ -1,19 +1,23 @@
 #include <iostream>
-
-struct CandyBar {
-  char name[20];
-  double price;
-  int callories;
-};
+#include <cstring>
+#include <string.h>
 
 int main()
 {
   using namespace std;
-  CandyBar snack = { "Mocha Munch", 2.3, 350 };
+  string name;
+  string lastname;
+ 
+  cout << "Enter your first name: ";
+  getline(cin, name);
+  cout << "Enter your last name: ";
+  getline(cin, lastname);
 
-  cout << "Name: " << snack.name << endl;
-  cout << "Price: " << snack.price << endl;
-  cout << "Callories: " << snack.callories << endl;
+  char *result = new char[name.length() + 2 + lastname.length()];
+  strcat(result, name.c_str());
+  strcat(result, ", ");
+  strcat(result, lastname.c_str());
+  cout << "Here’s the information in a single string: " << result;
 
   return 0;
 }
