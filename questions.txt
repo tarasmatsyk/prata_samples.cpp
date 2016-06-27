@@ -22,3 +22,10 @@ a: wchar_t is UTF16LE which is used by win32API and was invented before utf8
 Where is decimal? Double has relatvie accuracy, so how to work with money?
 
 6. How to set compile options in the file? Like Makefile for C
+
+7. char ch;
+cin.get(ch);
+
+ch is passed as reference? how to find out? is char a reference type?
+
+8. What is reference? a pointer to a pointer in case of char?
