@@ -1,17 +1,18 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 
 int main()
 {
 	using namespace std;
-	char delimiter[5] = "done";
-	char word[200];
+	string delimiter = "done";
+	string word;
 	int word_count = 0;
 
 	cout << "Please do not type the word done ): ";
  	cin >> word;
 
-	while (strcmp(delimiter, word))
+	// while loop to read each word. test condition checks if "done" is entered	
+	while (word != delimiter)
 	{
 		word_count++;
 		cin >> word;
